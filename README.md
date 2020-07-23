@@ -2,7 +2,7 @@
 
 <p align=center>Check some Basix C++ graphic program here</p>
 
-- Make Body
+- **Make Body**
 ```
   
 #include<iostream.h>
@@ -18,7 +18,7 @@ getch();
 }
 ```
 
-- Arc 
+- **Arc** 
 ```
 #include<iostream.h>
 #include<conio.h>
@@ -32,7 +32,7 @@ getch();
 closegraph();
 }
 ```
-- Circle
+- **Circle**
 ```
 #include<iostream.h>
 #include<conio.h>
@@ -46,7 +46,7 @@ getch();
 closegraph();
 }
 ```
-- Color
+- **Color**
 ```
 #include<conio.h>
 #include<iostream.h>
@@ -67,7 +67,7 @@ void main()
 	closegraph();
 }
 ```
-- Positioning
+- **Positioning**
 ```
   
 #include<iostream.h>
@@ -85,7 +85,7 @@ closegraph();
 getch();
 }
 ```
-- Rectangle
+- **Rectangle**
 ```
   
 #include<iostream.h>
