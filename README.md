@@ -100,5 +100,36 @@ getch();
 closegraph();
 }
 ```
+- Triangle
+```
+#include<iostream.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+int gd=DETECT,gm;
+initgraph(&gd,&gm,"");
+line(140,290,50,450);
+line(140,290,230,450);
+line(50,450,230,450);
+getch();
+closegraph();
+}
+```
+- Pixel
+```
+#include<iostream.h>
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+int gd=DETECT,gm,color;
+initgraph(&gd,&gm,"");
+putpixel(50,40,RED);
+getch();
+closegraph();
+return 0;
+}
+```
 
 <h2 align=center><b>Thank You</b></h2>
