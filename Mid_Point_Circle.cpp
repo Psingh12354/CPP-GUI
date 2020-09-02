@@ -3,7 +3,21 @@
 #include<graphics.h>
 #include<math.h>
 #include<dos.h>
-void circleP(int,int,int,int);
+void circleP(int x1,int y1,int x,int y)
+{
+//	cout<<"X1 = "<<x1;
+//	cout<<"Y1 = "<<y1;
+//	cout<<"X = "<<x<<endl;
+//	cout<<"Y = "<<y<<endl;
+	putpixel(x1+x,y1+y,15);  //1
+	putpixel(x1-x,y1+y,15);  //3
+	putpixel(x1+x,y1-y,15);  //7
+	putpixel(x1-x,y1-y,15);  //5
+	putpixel(x1+y,y1+x,15);  //2
+	putpixel(x1-y,y1+x,15);  //4
+	putpixel(x1+y,y1-x,15);  //8
+	putpixel(x1-y,y1-x,15);  //6
+}
 void circlemid(int x1,int y1,int r)
 {
 	int x=0,y=r;
@@ -23,21 +37,6 @@ void circlemid(int x1,int y1,int r)
 		delay(10);
 	}
 }
-void circleP(int x1,int y1,int x,int y)
-{
-//	cout<<"X1 = "<<x1;
-//	cout<<"Y1 = "<<y1;
-//	cout<<"X = "<<x<<endl;
-//	cout<<"Y = "<<y<<endl;
-	putpixel(x1+x,y1+y,15);  //1
-	putpixel(x1-x,y1+y,15);  //3
-	putpixel(x1+x,y1-y,15);  //7
-	putpixel(x1-x,y1-y,15);  //5
-	putpixel(x1+y,y1+x,15);  //2
-	putpixel(x1-y,y1+x,15);  //4
-	putpixel(x1+y,y1-x,15);  //8
-	putpixel(x1-y,y1-x,15);  //6
-}
 void main()
 {
 	int gd=DETECT,gm,p,q,m;
@@ -51,5 +50,6 @@ void main()
 		cin>>m;
 		putpixel(p,q,15);
 		circlemid(p,q,m);
+		outtextxy(p+m+1,q+m+1,"Circle");
 	getch();
 }
