@@ -5,13 +5,12 @@
 #include<dos.h>
 void circleplot(int x1,int y1,int x,int y)
 {
-	putpixel(x1+x,y1+y,7);
-	putpixel(x1-x,y1+y,8);
-	putpixel(x1+x,y1-y,9);
-	putpixel(x1-x,y1-y,10);
-	putpixel(x1+y,y1+x,11);
-	putpixel(x1-y,y1+x,12);
-	putpixel(x1+y,y1-x,13);
+	putpixel(x1+x,y1+y,8);
+	putpixel(x1-x,y1+y,9);
+	putpixel(x1+x,y1-y,10);
+	putpixel(x1-x,y1-y,11);
+	putpixel(x1+y,y1+x,12);
+	putpixel(x1-y,y1+x,13);
 	putpixel(x1+y,y1-x,14);
 	putpixel(x1-y,y1-x,15);	
 }
